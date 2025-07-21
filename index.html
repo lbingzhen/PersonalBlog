@@ -56,6 +56,10 @@
     .contact-icon:hover {
       transform: scale(1.2);
     }
+
+    .max-w-2xl{
+      padding-bottom: 3rem;
+    }
   </style>
 </head>
 <body>
@@ -63,12 +67,71 @@
   
   <header class="py-12 px-4 text-center">
     <div class="max-w-4xl mx-auto">
-      <img src="https://picsum.photos/150/150?random=1" alt="头像" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
+      <!-- <img src="https://picsum.photos/150/150?random=1" alt="头像" class="rounded-full mx-auto mb-6 border-4 border-white shadow-lg"> -->
       <h1 class="text-4xl font-bold text-gray-800 mb-2">刘丙振</h1>
       <h2 class="text-2xl text-blue-600 mb-4">前端开发工程师 | 三年经验</h2>
       <p class="text-gray-600 max-w-2xl mx-auto">专注于构建响应式、高性能的Web应用，擅长Vue框架开发，对用户体验有深刻理解。</p>
     </div>
   </header>
+      <section class="max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">联系方式</h2>
+        <div class="contact-card bg-white p-8 rounded-lg shadow-md">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex items-center space-x-4">
+              <div class="contact-icon bg-blue-100 p-3 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-gray-500 text-sm">邮箱</h3>
+                <p class="font-medium">lbz15127709273@163.com</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="contact-icon bg-green-100 p-3 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-gray-500 text-sm">电话</h3>
+                <p class="font-medium">151-2770-9273</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="contact-icon bg-purple-100 p-3 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-gray-500 text-sm">微信</h3>
+                <p class="font-medium">lbz15127709273</p>
+              </div>
+            </div>
+            <!-- <div class="flex items-center space-x-4">
+              <div class="contact-icon bg-yellow-100 p-3 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-gray-500 text-sm">GitHub</h3>
+                <p class="font-medium">github.com/zhangming</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
 
   <main class="max-w-6xl mx-auto px-4 pb-16">
     <section class="mb-16">
@@ -98,10 +161,10 @@
             <div>
               <div class="flex justify-between mb-1">
                 <span class="font-medium">Vue.js</span>
-                <span>88%</span>
+                <span>90%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress" style="width: 88%"></div>
+                <div class="skill-progress" style="width: 90%"></div>
               </div>
             </div>
           </div>
@@ -112,10 +175,10 @@
             <div>
               <div class="flex justify-between mb-1">
                 <span class="font-medium">Vuex</span>
-                <span>85%</span>
+                <span>88%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
+                <div class="skill-progress" style="width: 88%"></div>
               </div>
             </div>
             <div>
@@ -145,102 +208,51 @@
       <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Vue项目展示</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <a href="project-details.html?id=1" class="project-card bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="https://picsum.photos/600/400?random=2" alt="项目1" class="w-full h-48 object-cover">
+          <img src="./img/后台登录页.png" alt="项目1" class="w-full h-48 object-cover">
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Vue电商平台</h3>
-            <p class="text-gray-600 mb-4">基于Vue构建的响应式电商平台，实现了商品展示、购物车和支付流程。</p>
+            <h3 class="text-xl font-semibold mb-2">音卓尔后台管理系统</h3>
+            <p class="text-gray-600 mb-4">使用Vue.js开发的企业内部管理系统，包含权限控制和数据可视化。</p>
             <div class="flex space-x-2">
-              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Vue 3</span>
-              <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Pinia</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Vue 2</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Element UI</span>
             </div>
           </div>
         </a>
         <a href="project-details.html?id=2" class="project-card bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="https://picsum.photos/600/400?random=3" alt="项目2" class="w-full h-48 object-cover">
+          <img src="./img/美育学校.png" alt="项目2" class="w-full h-48 object-cover">
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Vue企业管理系统</h3>
-            <p class="text-gray-600 mb-4">使用Vue.js开发的企业内部管理系统，包含权限控制和数据可视化。</p>
+            <h3 class="text-xl font-semibold mb-2">音卓尔多端控制管理系统</h3>
+            <p class="text-gray-600 mb-4">基于Vue构建的多端用户平台管理(琴行管理 代理商 美育学校 艺起赛考试比赛),企业内部管理系统，包含权限控制和数据可视化</p>
             <div class="flex space-x-2">
               <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Vue 2</span>
-              <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Element UI</span>
+              <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Echarts</span>
             </div>
           </div>
         </a>
         <a href="project-details.html?id=3" class="project-card bg-white rounded-lg overflow-hidden shadow-md">
-          <img src="https://picsum.photos/600/400?random=4" alt="项目3" class="w-full h-48 object-cover">
+          <img src="./img/小程序.jpg" alt="项目3" class="w-full h-48 object-cover">
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Vue后台管理系统</h3>
-            <p class="text-gray-600 mb-4">基于Vue和Element Plus构建的后台管理系统，支持多角色权限控制。</p>
+            <h3 class="text-xl font-semibold mb-2">音卓尔乐伴</h3>
+            <p class="text-gray-600 mb-4">uni-app开发,使用 Vue.js 开发所有前端应用的框架，编写一套代码可以适配到多端平台使用</p>
             <div class="flex space-x-2">
-              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Vue 3</span>
-              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Element Plus</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">uni-app</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HBuilderX Vant</span>
             </div>
           </div>
         </a>
       </div>
     </section>
 
-    <section class="max-w-2xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">联系方式</h2>
-      <div class="contact-card bg-white p-8 rounded-lg shadow-md">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex items-center space-x-4">
-            <div class="contact-icon bg-blue-100 p-3 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-gray-500 text-sm">邮箱</h3>
-              <p class="font-medium">zhangming@example.com</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <div class="contact-icon bg-green-100 p-3 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-gray-500 text-sm">电话</h3>
-              <p class="font-medium">138-1234-5678</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <div class="contact-icon bg-purple-100 p-3 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-gray-500 text-sm">微信</h3>
-              <p class="font-medium">zhangming_web</p>
-            </div>
-          </div>
-          <div class="flex items-center space-x-4">
-            <div class="contact-icon bg-yellow-100 p-3 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-gray-500 text-sm">GitHub</h3>
-              <p class="font-medium">github.com/zhangming</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="bg-gray-800 text-white py-8 text-center">
     <div class="max-w-4xl mx-auto px-4">
-      <div class="flex justify-center space-x-6 mb-4">
+      <!-- <div class="flex justify-center space-x-6 mb-4">
         <a href="#" class="text-gray-300 hover:text-white transition duration-300">GitHub</a>
         <a href="#" class="text-gray-300 hover:text-white transition duration-300">LinkedIn</a>
         <a href="#" class="text-gray-300 hover:text-white transition duration-300">Twitter</a>
-      </div>
-      <p class="text-gray-400">© 2025 张明 - 前端开发工程师. 保留所有权利.</p>
+      </div> -->
+      <p class="text-gray-400">© 2025 刘丙振 - 前端开发工程师. 保留所有权利.</p>
     </div>
   </footer>
 
