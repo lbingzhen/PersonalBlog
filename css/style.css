@@ -1,0 +1,194 @@
+
+/* frontend_developer_portfolio/frontend/css/style.css */
+@import url('https://fonts.loli.net/css?family=Noto+Sans+SC:400,700&display=swap');
+
+:root {
+  --primary-color: #4facfe;
+  --secondary-color: #00f2fe;
+  --text-color: #333;
+  --light-gray: #f5f7fa;
+  --dark-gray: #c3cfe2;
+  --line-animation-duration: 0.5s;
+  --line-repulse-distance: 50px;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background: linear-gradient(135deg, var(--light-gray) 0%, var(--dark-gray) 100%);
+  color: var(--text-color);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.particles-js-canvas-el {
+  transition: all var(--line-animation-duration) ease-out;
+}
+
+header {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header img {
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+.skill-bar {
+  height: 20px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  transition: width 1s ease-in-out;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.contact-method:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover .contact-icon {
+  transform: scale(1.1);
+}
+
+.contact-info h3 {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 0.2rem;
+}
+
+.contact-info p {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.project-card {
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(79, 172, 254, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+  }
+  
+  .project-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .skill-bar {
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header h2 {
+    font-size: 1.25rem;
+  }
+  
+  .project-card img {
+    height: 150px;
+  }
+}
